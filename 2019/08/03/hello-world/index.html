@@ -66,7 +66,7 @@
       if (els.length) {
         // Enabled Hexo highlight line number.
         $(els).each(function (i, e) {
-          $(e).before("<button class=\"copy button\">Copy</button>");
+          $(e).before("<button class=\"copy button\">复制</button>");
         });
         cb = new ClipboardJS("button.copy", {
           "target": function (trigger) {
@@ -82,7 +82,7 @@
         els = $(".post pre code");
         $(els).each(function (i, e) {
           // Add button before pre, not code.
-          $(e).parent().before("<button class=\"copy button\">Copy</button>");
+          $(e).parent().before("<button class=\"copy button\">复制</button>");
         });
         cb = new ClipboardJS("button.copy", {
           "target": function (trigger) {
@@ -98,11 +98,11 @@
         e.clearSelection();
         var trigger = e.trigger;
         // Change button text as a user tip.
-        trigger.innerHTML = "Copied";
+        trigger.innerHTML = "已复制";
         $(trigger).addClass("copied");
         // Change button text back;
         setTimeout(function () {
-          trigger.innerHTML = "Copy";
+          trigger.innerHTML = "复制";
           $(trigger).removeClass("copied");
         }, 1500);
       });
@@ -124,7 +124,7 @@
       
     </div>
     <nav id="nav" class="nav">
-      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="Toggle Navbar"></i></a>
+      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
       <ul id="menu" role="menubar" aria-hidden="false">
         
       </ul>
@@ -192,7 +192,7 @@
     </div>
     <div class="page-nav-prev page-nav-item">
       
-      <a href="/2019/08/03/第一篇/" rel="prev" title="第一篇"><span class="nav-title">第一篇</span><i class="fas fa-angle-right"></i></a>
+      <a href="/2019/08/03/第一篇/" rel="prev" title="HTML总结"><span class="nav-title">HTML总结</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </nav>
@@ -208,7 +208,7 @@
   
   <div class="search">
     <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="Search" class="form-control">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
     </div>
   </div>
   <div class="search-result-box" id="search-result"></div>
@@ -237,7 +237,7 @@
     
     <hr>
     <div class="post-toc sidebar-item" id="toc-div">
-      <div><i class="fas fa-list-ol"></i>Table of Contents</div>
+      <div><i class="fas fa-list-ol"></i>文章目录</div>
       <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
     </div>
     
@@ -256,7 +256,7 @@
 <footer id="footer" class="footer">
   <div class="container">
     <div class="back-to-top">
-      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="Back to Top"></i></button>
+      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="回到顶部"></i></button>
     </div>
     <div class="footer-container">
       <div class="footer-left">
@@ -270,7 +270,7 @@
           
         </div>
         <div class="powered-by">
-          Proudly Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme is <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
         </div>
       </div>
     </div>
